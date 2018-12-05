@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.code-wraper {
+  flex: 1;
+  height: 50%;
+}
+
+.preview-wraper {
+  flex: 1;
+  height: 50%;
+}
+
+.code {
+  overflow: hidden;
+  height: 100%;
+}
+
+.actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+}
+
+.actions button {
+  padding: 10px 15px;
+  margin: 10px;
+  background: #509aaf;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.actions button.active {
+  background: red;
+  color: white;
+}
